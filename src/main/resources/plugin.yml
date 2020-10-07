@@ -1,0 +1,10 @@
+name: OfflineAnnouncements
+version: ${project.version}
+main: me.carthax08.offlineannouncements.OfflineAnnouncements
+api-version: 1.16
+description: Queues an announcement to be sent to players once they join.
+commands:
+  offlineannouncements:
+    aliases: [oa, offline]
+    description: Queues a message to be sent to players when they join the server. ALIASES; /oa, /offline
+    usage: /offlineannouncements [send, help] [message (for send)]
