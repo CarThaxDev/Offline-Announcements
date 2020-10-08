@@ -1,4 +1,9 @@
 # Offline Announcements
+
+# Compiled Version
+Hosted on RedSeal9's CI
+https://ci.redseal.red/job/Offline-Announcements/
+
 # How to build:  
 ```
 git clone https://github.com/CarThax08/Offline-Announcements.git
