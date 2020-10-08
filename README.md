@@ -1,7 +1,7 @@
 # Offline Announcements
   TO BUILD:  
     ```
-    mvn clean install
+    mvn package
     ```
     
 # What is it?
