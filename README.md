@@ -1,7 +1,7 @@
 # Offline Announcements
 
 # Compiled Version
-Hosted on RedSeal9's CI
+Hosted on RedSeal9's Jenkins CI
 https://ci.redseal.red/job/Offline-Announcements/
 
 # How to build:  
