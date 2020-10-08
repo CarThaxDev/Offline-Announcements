@@ -25,6 +25,7 @@ public class onPlayerJoin implements Listener {
             player.sendMessage(message);
             playerList.add(player.getName());
             plugin.getConfig().set("info.players", playerList);
+            plugin.saveConfig();
             plugin.reloadConfig();
         }
     }
