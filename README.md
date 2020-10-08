@@ -3,7 +3,7 @@
 ```
 git clone https://github.com/CarThax08/Offline-Announcements.git
 cd Offline-Announcements
-mvn package
+mvn clean install
 ```
     
 # What is it?
