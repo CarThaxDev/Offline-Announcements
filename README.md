@@ -1,10 +1,10 @@
 # Offline Announcements
 # How to build:  
-    ```
+```
     git clone https://github.com/CarThax08/Offline-Announcements.git
     cd Offline-Announcements
     mvn package
-    ```
+```
     
 # What is it?
    Offline announcements is a minecraft plugin for 1.16.3 that, like the name suggests, queues a message to be sent when a player joins.
