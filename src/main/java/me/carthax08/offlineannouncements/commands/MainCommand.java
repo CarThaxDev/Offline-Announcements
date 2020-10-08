@@ -20,20 +20,20 @@ public class MainCommand implements CommandExecutor {
             Player player = ((Player) sender);
             boolean canRun = player.hasPermission("offline.send") || player.isOp();
             if(args.length == 0){
-                player.sendMessage("+-----------------------------------------------+");
-                player.sendMessage("| /offlineannouncements - Prints this page      |");
-                player.sendMessage("| /offlineannouncements help - Prints this page |");
-                player.sendMessage("| /offlineannouncements send <Message> - sets a |");
-                player.sendMessage("|        message to be sent once a player joins |");
-                player.sendMessage("+-----------------------------------------------+");
+                player.sendMessage("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                player.sendMessage("┃ /offlineannouncements - Prints this page      ┃");
+                player.sendMessage("┃ /offlineannouncements help - Prints this page ┃");
+                player.sendMessage("┃ /offlineannouncements send <Message> - sets a ┃");
+                player.sendMessage("┃        message to be sent once a player joins ┃");
+                player.sendMessage("┗╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
             } else if(args.length == 1){
                 if(args[0].equalsIgnoreCase("help")){
-                    player.sendMessage("+-----------------------------------------------+");
-                    player.sendMessage("| /offlineannouncements - Prints this page      |");
-                    player.sendMessage("| /offlineannouncements help - Prints this page |");
-                    player.sendMessage("| /offlineannouncements send <Message> - sets a |");
-                    player.sendMessage("|        message to be sent once a player joins |");
-                    player.sendMessage("+-----------------------------------------------+");
+                    player.sendMessage("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                    player.sendMessage("┃ /offlineannouncements - Prints this page      ┃");
+                    player.sendMessage("┃ /offlineannouncements help - Prints this page ┃");
+                    player.sendMessage("┃ /offlineannouncements send <Message> - sets a ┃");
+                    player.sendMessage("┃        message to be sent once a player joins ┃");
+                    player.sendMessage("┗╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
                 }else if(args[0].equalsIgnoreCase("send") && player.hasPermission("offline.send")){
                     player.sendMessage("You need to provide a message!");
                 } else{
@@ -41,12 +41,12 @@ public class MainCommand implements CommandExecutor {
                 }
             }else {
                 if(args[0].equalsIgnoreCase("help")){
-                    player.sendMessage("+-----------------------------------------------+");
-                    player.sendMessage("| /offlineannouncements - Prints this page      |");
-                    player.sendMessage("| /offlineannouncements help - Prints this page |");
-                    player.sendMessage("| /offlineannouncements send <Message> - sets a |");
-                    player.sendMessage("|        message to be sent once a player joins |");
-                    player.sendMessage("+-----------------------------------------------+");
+                    player.sendMessage("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                    player.sendMessage("┃ /offlineannouncements - Prints this page      ┃");
+                    player.sendMessage("┃ /offlineannouncements help - Prints this page ┃");
+                    player.sendMessage("┃ /offlineannouncements send <Message> - sets a ┃");
+                    player.sendMessage("┃        message to be sent once a player joins ┃");
+                    player.sendMessage("┗╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
                 } else if(args[0].equalsIgnoreCase("send") && canRun){
                     String message = "";
                     for (int i = 1; i < args.length; i++) {
