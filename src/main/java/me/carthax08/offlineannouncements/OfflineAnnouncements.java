@@ -2,11 +2,9 @@ package me.carthax08.offlineannouncements;
 
 import me.carthax08.offlineannouncements.commands.MainCommand;
 import org.bukkit.ChatColor;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import me.carthax08.offlineannouncements.events.onPlayerJoin;
 
-import java.util.Optional;
 
 public final class OfflineAnnouncements extends JavaPlugin {
 

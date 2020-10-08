@@ -6,7 +6,7 @@
 
     <groupId>me.carthax08</groupId>
     <artifactId>OfflineAnnouncements</artifactId>
-    <version>ALPHA 1.0</version>
+    <version>RELEASE</version>
     <packaging>jar</packaging>
 
     <name>OfflineAnnouncements</name>
@@ -45,6 +45,7 @@
                 </executions>
             </plugin>
         </plugins>
+        <finalName>${project.artifactId}</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -52,7 +53,6 @@
             </resource>
         </resources>
     </build>
-
     <repositories>
         <repository>
             <id>spigotmc-repo</id>
@@ -72,4 +72,5 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
 </project>

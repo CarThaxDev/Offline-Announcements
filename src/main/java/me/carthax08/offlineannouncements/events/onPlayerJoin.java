@@ -1,6 +1,5 @@
 package me.carthax08.offlineannouncements.events;
 
-import com.sun.tools.jdi.Packet;
 import me.carthax08.offlineannouncements.OfflineAnnouncements;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
