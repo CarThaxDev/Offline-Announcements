@@ -1,6 +1,7 @@
 package me.carthax08.offlineannouncements.commands;
 
 import me.carthax08.offlineannouncements.OfflineAnnouncements;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -58,6 +59,8 @@ public class MainCommand implements CommandExecutor {
                     plugin.reloadConfig();
                 }
             }
+        }else{
+            System.out.println(ChatColor.RED + "[OfflineAnnoucenments] You must be a player to run this command!");
         }
         return true;
     }
