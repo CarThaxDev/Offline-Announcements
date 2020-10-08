@@ -1,6 +1,8 @@
 # Offline Announcements
-  TO BUILD:  
+# How to build:  
     ```
+    git clone https://github.com/CarThax08/Offline-Announcements.git
+    cd Offline-Announcements
     mvn package
     ```
     
