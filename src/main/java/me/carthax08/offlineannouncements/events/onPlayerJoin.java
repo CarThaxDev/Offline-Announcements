@@ -7,6 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 import java.util.List;
+import java.util.Objects;
 
 public class onPlayerJoin implements Listener {
     OfflineAnnouncements plugin;
@@ -26,6 +27,10 @@ public class onPlayerJoin implements Listener {
             plugin.getConfig().set("info.players", playerList);
             plugin.saveConfig();
             plugin.reloadConfig();
+            if(!Objects.requireNonNull(plugin.getConfig().getString("players." + player.getName() + ".message")).isEmpty() && !plugin.getConfig().getBoolean("players." + player.getName() + ".hasSeenMessage")){
+                player.sendMessage(Objects.requireNonNull(plugin.getConfig().getString("players." + player.getName() + ".message")));
+                plugin.getConfig().set("players." + player.getName() + ".hasSeenMessage", true);
+            }
         }
     }
 }
