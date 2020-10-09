@@ -29,7 +29,7 @@ public class onPlayerJoin implements Listener {
             plugin.reloadConfig();
             if(!Objects.requireNonNull(plugin.getConfig().getString("players." + player.getName() + ".message")).isEmpty() && !plugin.getConfig().getBoolean("players." + player.getName() + ".hasSeenMessage")){
                 player.sendMessage(Objects.requireNonNull(plugin.getConfig().getString("players." + player.getName() + ".message")));
-                plugin.getConfig().set("players." + player.getName() + ".hasSeenMessage", true);
+                plugin.getConfig().set("players." + player.getName() + ".hasBeenSeen", true);
             }
         }
     }

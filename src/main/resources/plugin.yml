@@ -6,5 +6,9 @@ description: Queues an announcement to be sent to players once they join.
 commands:
   offlineannouncements:
     aliases: [oa, offline]
-    description: Queues a message to be sent to players when they join the server. ALIASES; /oa, /offline
+    description: Queues a message to be sent to players when they join the server.
     usage: /offlineannouncements [send, help] [message (for send)]
+  personalmessage:
+    aliases: [pm, poffline, poa, personaloa, personalofflineannouncements]
+    description: Queues a message to be sent to a specific player when they join.
+    usage: /personalmessage [player] [message]
