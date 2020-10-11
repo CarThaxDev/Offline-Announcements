@@ -27,9 +27,11 @@ public class onPlayerJoin implements Listener {
             plugin.getConfig().set("info.players", playerList);
             plugin.saveConfig();
             plugin.reloadConfig();
+            System.out.println("[OfflineAnnouncements]" + player.getName() + "has seen global message '" + message + "'");
             if(!Objects.requireNonNull(plugin.getConfig().getString("players." + player.getName() + ".message")).isEmpty() && !plugin.getConfig().getBoolean("players." + player.getName() + ".hasSeenMessage")){
                 player.sendMessage(Objects.requireNonNull(plugin.getConfig().getString("players." + player.getName() + ".message")));
                 plugin.getConfig().set("players." + player.getName() + ".hasBeenSeen", true);
+                System.out.println("[OfflineAnnouncements]" + player.getName() + "has seen personal message '" + plugin.getConfig().getString("players." + player.getName() + ".message") + "'");
             }
         }
     }

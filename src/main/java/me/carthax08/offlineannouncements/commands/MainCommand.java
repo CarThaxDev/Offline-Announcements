@@ -21,6 +21,8 @@ public class MainCommand implements CommandExecutor {
             boolean canRun = player.hasPermission("offline.send") || player.isOp();
             if(args.length == 0){
                 player.sendMessage("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                player.sendMessage("┃ OfflineAnnouncements Version 1.0 by CarTHax08 ┃");
+                player.sendMessage("┃                                               ┃");
                 player.sendMessage("┃ /offlineannouncements - Prints this page      ┃");
                 player.sendMessage("┃ /offlineannouncements help - Prints this page ┃");
                 player.sendMessage("┃ /offlineannouncements send <Message> - sets a ┃");
@@ -29,6 +31,8 @@ public class MainCommand implements CommandExecutor {
             } else if(args.length == 1){
                 if(args[0].equalsIgnoreCase("help")){
                     player.sendMessage("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                    player.sendMessage("┃ OfflineAnnouncements Version 1.0 by CarTHax08 ┃");
+                    player.sendMessage("┃                                               ┃");
                     player.sendMessage("┃ /offlineannouncements - Prints this page      ┃");
                     player.sendMessage("┃ /offlineannouncements help - Prints this page ┃");
                     player.sendMessage("┃ /offlineannouncements send <Message> - sets a ┃");
@@ -42,6 +46,8 @@ public class MainCommand implements CommandExecutor {
             }else {
                 if(args[0].equalsIgnoreCase("help")){
                     player.sendMessage("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                    player.sendMessage("┃ OfflineAnnouncements Version 1.0 by CarTHax08 ┃");
+                    player.sendMessage("┃                                               ┃");
                     player.sendMessage("┃ /offlineannouncements - Prints this page      ┃");
                     player.sendMessage("┃ /offlineannouncements help - Prints this page ┃");
                     player.sendMessage("┃ /offlineannouncements send <Message> - sets a ┃");
@@ -57,6 +63,8 @@ public class MainCommand implements CommandExecutor {
                     plugin.getConfig().set("info.players", Collections.emptyList());
                     plugin.saveConfig();
                     plugin.reloadConfig();
+                }else{
+                    player.sendMessage("Unknown Argument Provided.");
                 }
             }
         }else{

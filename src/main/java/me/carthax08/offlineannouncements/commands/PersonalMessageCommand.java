@@ -32,7 +32,15 @@ public class PersonalMessageCommand implements CommandExecutor {
             } else if(args.length == 0){
                 player.sendMessage("Please specify a player and a message.");
             } else if(args.length == 1){
-                player.sendMessage("Please specify a message.");
+                if(!args[0].equalsIgnoreCase("help")) {
+                    player.sendMessage("Please specify a message.");
+                }else{
+                    player.sendMessage("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                    player.sendMessage("┃ OfflineAnnouncements Version 1.0 by CarThax08 ┃");
+                    player.sendMessage("┃      /personalmessage [player] [message]      ┃");
+                    player.sendMessage("┃   Normal command but to a specific player     ┃");
+                    player.sendMessage("┗╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+                }
             } else{
                 player.sendMessage("An unknown error has occurred. Please let CarThax08 know on the GitHub.");
             }
