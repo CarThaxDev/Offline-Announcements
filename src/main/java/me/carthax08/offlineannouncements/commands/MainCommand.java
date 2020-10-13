@@ -56,7 +56,7 @@ public class MainCommand implements CommandExecutor {
                 } else if(args[0].equalsIgnoreCase("send") && canRun){
                     String message = "";
                     for (int i = 1; i < args.length; i++) {
-                        message = message + " " + args[i];
+                            message = message + args[i] + " ";
                     }
                     player.sendMessage("Message successfully queued.");
                     plugin.getConfig().set("info.message", message);
