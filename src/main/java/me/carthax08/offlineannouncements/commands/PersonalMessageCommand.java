@@ -23,12 +23,13 @@ public class PersonalMessageCommand implements CommandExecutor {
                 if (player1 == null){
                     player.sendMessage("The player you've specified does not exist.");
                 }
-                String message = "";
+                StringBuilder message = new StringBuilder();
                 for (int i = 1; i < args.length; i++){
-                    message = message + args[i] + " ";
+                    message.append(args[i]).append(" ");
                 }
-                plugin.getConfig().set("players." + args[0] + ".message", message);
+                plugin.getConfig().set("players." + args[0] + ".message", message.toString());
                 plugin.getConfig().set("players." + args[0] + ".hasBeenSeen", false);
+                player.sendMessage("Message successfully queued.");
             } else if(args.length == 0){
                 player.sendMessage("Please specify a player and a message.");
             } else if(args.length == 1){
@@ -42,7 +43,7 @@ public class PersonalMessageCommand implements CommandExecutor {
                     player.sendMessage("┗╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
                 }
             } else{
-                player.sendMessage("An unknown error has occurred. Please let CarThax08 know on the GitHub.");
+                player.sendMessage("An unknown error has occurred. Please let CarThax08 know on the GitHub. Include what you did to cause this error and if you were able to repeat it.");
             }
         }
         return true;

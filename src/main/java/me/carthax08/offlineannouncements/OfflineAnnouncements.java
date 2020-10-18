@@ -9,13 +9,13 @@ import me.carthax08.offlineannouncements.events.onPlayerJoin;
 
 public final class OfflineAnnouncements extends JavaPlugin {
 
-    String version = "RELEASE 1.0";
+    String version = "RELEASE 1.0-BETA 3";
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         getServer().getConsoleSender().sendMessage(ChatColor.RESET + "[OfflineAnnouncements] Loading Plugin, Please wait...");
-        getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[OfflineAnnouncements] Plugin version " + version + "is present.");
+        getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[OfflineAnnouncements] Plugin version " + version + " is present.");
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[OfflineAnnouncements] Please check the GitHub for a newer version.");
         getCommand("offlineannouncements").setExecutor(new MainCommand(this));
         getCommand("personalmessage").setExecutor(new PersonalMessageCommand(this));
