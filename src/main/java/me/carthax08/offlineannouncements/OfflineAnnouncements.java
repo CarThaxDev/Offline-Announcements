@@ -9,7 +9,7 @@ import me.carthax08.offlineannouncements.events.onPlayerJoin;
 
 public final class OfflineAnnouncements extends JavaPlugin {
 
-    String version = "RELEASE 1.0-BETA 3";
+    String version = "RELEASE 1.0-BETA 4";
 
     @Override
     public void onEnable() {

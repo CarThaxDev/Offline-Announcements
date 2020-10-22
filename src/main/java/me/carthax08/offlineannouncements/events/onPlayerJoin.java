@@ -35,7 +35,7 @@ public class onPlayerJoin implements Listener{
                     System.out.println("[OfflineAnnouncements]" + player.getName() + "has seen personal message '" + plugin.getConfig().getString("players." + player.getName() + ".message") + "'");
                 }
             }
-        catch(Exception e){
+        catch(NullPointerException e){
                 System.out.println("Player" + player.getName() + "does not have a personal message.");
         }
         }
